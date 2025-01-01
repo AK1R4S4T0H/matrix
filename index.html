@@ -90,6 +90,16 @@
 		</style>
 	</head>
 	<body>
+		<div id="webamp"></div>
+		  <script src="https://unpkg.com/webamp"></script>
+		  <script>
+		    new Webamp({
+		      initialTracks: [{
+		        metaData: { artist: "Artist Name", title: "Track Title" },
+		        url: "path/to/your/audio.mp3",
+		      }]
+		    }).renderWhenReady(document.getElementById("webamp"));
+		  </script>
 		<!--
 			This is an implementation of the green code seen in The Matrix film and video game franchise.
 			This project demonstrates five concepts:
